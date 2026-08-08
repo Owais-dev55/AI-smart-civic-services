@@ -3,7 +3,9 @@
  * Seamlessly proxies through Next.js rewrite or direct backend on http://127.0.0.1:8000
  */
 
-const API_BASE = "";
+const API_BASE = typeof window !== "undefined" && process.env.NEXT_PUBLIC_API_URL
+  ? process.env.NEXT_PUBLIC_API_URL.replace(/\/+$/, "")
+  : "";
 
 export interface Complaint {
   id: string;
