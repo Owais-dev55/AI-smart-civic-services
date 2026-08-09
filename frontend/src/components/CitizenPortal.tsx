@@ -100,12 +100,18 @@ export function CitizenPortal({ onSuccess, onNavigateToAdmin }: CitizenPortalPro
 
   return (
     <div>
+      <style>{`
+        .cp-grid { display: grid; grid-template-columns: 1fr 360px; gap: 20px; align-items: start; }
+        .cp-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+        @media (max-width: 900px) { .cp-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) { .cp-form-row { grid-template-columns: 1fr; } }
+      `}</style>
       <div className="section-header">
         <h1>AwaamCare Citizen Portal</h1>
         <p>Submit a municipal complain in English or Roman Urdu with real photo evidence. The AI instantly categorizes, inspects visual damage, and routes it to the responsible department.</p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 360px", gap: 20, alignItems: "start" }}>
+      <div className="cp-grid">
 
         {/* Form */}
         <div className="surface" style={{ padding: 24 }}>
@@ -113,7 +119,7 @@ export function CitizenPortal({ onSuccess, onNavigateToAdmin }: CitizenPortalPro
             Complain Registration Details
           </div>
           <form onSubmit={handleSubmit}>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 14 }}>
+            <div className="cp-form-row">
               <div>
                 <FL>Citizen Name</FL>
                 <input

@@ -1,47 +1,660 @@
 [
-  {"text": "electricity nhi arahi hai subha 8 bajay se load shedding ka koi time table nahi hai", "category": "Electricity & Power Outage", "priority": "High", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Unscheduled power outage ongoing since 8 AM"},
-  {"text": "bijli chali gayi hai transformer se aag nikal rahi hai aur taar toot gayi hai", "category": "Electricity & Power Outage", "priority": "Critical", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Transformer on fire with snapped live wire"},
-  {"text": "voltage bohat low araha hai AC aur fridge jalne ka khatra hai 140 volts", "category": "Electricity & Power Outage", "priority": "High", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Severe low voltage fluctuation damaging household appliances"},
-  {"text": "K-Electric feeder tripped in Gulshan Block 7 entire street in total blackout", "category": "Electricity & Power Outage", "priority": "High", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Feeder trip causing complete blackout in Gulshan Block 7"},
-  {"text": "streetlight pole ki nangi taar sadak par jhool rahi hai current lag sakta hai", "category": "Electricity & Power Outage", "priority": "Critical", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Live exposed electric wire dangling near pedestrian pathway"},
-  {"text": "light nahi hai garmi me bachay beemar ho rahe hain 10 ghantay se bijli band hai", "category": "Electricity & Power Outage", "priority": "High", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Prolonged 10-hour electricity outage in high heat"},
-  {"text": "electric meter box sparking continuously outside residential apartment", "category": "Electricity & Power Outage", "priority": "Critical", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Electric meter sparking fire hazard at apartment gate"},
-  {"text": "street lights raat ko nahi jalti pura ilaqah andheray me dooba rehta hai", "category": "Electricity & Power Outage", "priority": "Medium", "department": "Power Distribution Company (K-Electric / LESCO / IESCO)", "summary": "Non-functional streetlights causing area blackout at night"},
-
-  {"text": "gas ki load shedding ho rahi hai subha se chulha nahi jal raha nashta nahi bana saktay", "category": "Gas Supply & Loadshedding", "priority": "High", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Zero gas pressure preventing domestic cooking since morning"},
-  {"text": "gas ka pressure bilkul low hai roti nahi pak rahi Sui Gas supply band hai", "category": "Gas Supply & Loadshedding", "priority": "Medium", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Extremely low gas pressure during peak meal hours"},
-  {"text": "gas pipeline leak ho rahi hai gali me shadeed badboo hai blast ka khatra hai", "category": "Gas Supply & Loadshedding", "priority": "Critical", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Major gas pipeline leak with severe explosion risk in street"},
-  {"text": "SSGC gas supply disconnect ho gayi hai bina kisi notice ke Model Town me", "category": "Gas Supply & Loadshedding", "priority": "Medium", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Unannounced gas supply disconnection in Model Town"},
-  {"text": "gas meter leak kar raha hai chulha on kartay hi aag bharak uthti hai", "category": "Gas Supply & Loadshedding", "priority": "Critical", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Dangerous gas meter leak causing fire burst hazard"},
-  {"text": "SNGPL main line underground leakage hissing sound coming from road excavation", "category": "Gas Supply & Loadshedding", "priority": "Critical", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Underground gas pipeline rupture hissing near road trench"},
-  {"text": "gas nahi arahi pichle 3 din se hotel se khana mangwana par raha hai", "category": "Gas Supply & Loadshedding", "priority": "Medium", "department": "Sui Gas Authority (SSGC / SNGPL)", "summary": "Continuous 3-day gas outage in residential sector"},
-
-  {"text": "sweeper safai nhi kr raha pichle do hafton se gali me kachra phail gaya hai", "category": "Waste & Sanitation", "priority": "Medium", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Sanitation worker absent for 2 weeks leading to street waste accumulation"},
-  {"text": "kachray ka dher laga hua hai main road par aur shadeed badbu aur makhiyan arahi hain", "category": "Waste & Sanitation", "priority": "High", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Massive garbage pile on main road causing stench and pest infestation"},
-  {"text": "kachra kundi overflow ho chuki hai janwar kachra sadak par bikher rahe hain", "category": "Waste & Sanitation", "priority": "Medium", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Overflowing waste dumpster scattered by stray animals onto street"},
-  {"text": "dead animal carcass lying near market entrance health emergency stench", "category": "Waste & Sanitation", "priority": "Critical", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Decomposing animal carcass hazard outside vegetable market"},
-  {"text": "LWMC garbage collection dumper pichle 5 din se gali me nahi aya", "category": "Waste & Sanitation", "priority": "Medium", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Missed municipal garbage truck collection schedule"},
-  {"text": "plastic aur kachra jalaya ja raha hai jiss se zehreela dhuaan phail raha hai", "category": "Waste & Sanitation", "priority": "Critical", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Toxic open plastic waste burning producing heavy black smoke"},
-  {"text": "sweeper safai ke paise mangta hai warna kachra nahi uthata", "category": "Waste & Sanitation", "priority": "Medium", "department": "Solid Waste Management Board (SSWMB / LWMC)", "summary": "Sanitation staff extortion and refusal of municipal waste duty"},
-
-  {"text": "paani nahi araha 5 din se WASA supply bilkul band hai tanker mangwana par raha hai", "category": "Water Supply & Leakage", "priority": "High", "department": "Water & Sanitation Agency (WASA / KWSB)", "summary": "Complete 5-day municipal water supply cutoff"},
-  {"text": "main water pipeline burst ho gayi hai hazaron gallon saaf paani sadak par beh raha hai", "category": "Water Supply & Leakage", "priority": "Critical", "department": "Water & Sanitation Agency (WASA / KWSB)", "summary": "Major fresh water main line burst flooding road and wasting water"},
-  {"text": "ganda badboodar paani tap se araha hai sewerage ka paani drinking line me mix ho gaya", "category": "Water Supply & Leakage", "priority": "Critical", "department": "Water & Sanitation Agency (WASA / KWSB)", "summary": "Sewage mixing with drinking water line causing contamination health hazard"},
-  {"text": "water tanker mafia 10000 rupay mang raha hai sarkari supply zero hai KWSB issue", "category": "Water Supply & Leakage", "priority": "High", "department": "Water & Sanitation Agency (WASA / KWSB)", "summary": "Water scarcity crisis and illegal tanker mafia overcharging"},
-  {"text": "paani ki underground pipe leak hone se road dhas gayi hai", "category": "Water Supply & Leakage", "priority": "High", "department": "Water & Sanitation Agency (WASA / KWSB)", "summary": "Underground water pipe leakage causing road subsidence"},
-
-  {"text": "gutter ubal raha hai ganda sewerage ka paani gharon ke darwazay par jam gaya hai", "category": "Drainage & Sewerage", "priority": "Critical", "department": "Drainage & Sewerage Division", "summary": "Overflowing sewer manhole inundating residential entrances"},
-  {"text": "sewer line block ho chuki hai toilet aur washroom se paani reverse mar raha hai", "category": "Drainage & Sewerage", "priority": "High", "department": "Drainage & Sewerage Division", "summary": "Blocked sewer main causing backflow into household toilets"},
-  {"text": "manhole ka dhakkan gayab hai khula gutter sadak par hai bacha gir sakta hai", "category": "Drainage & Sewerage", "priority": "Critical", "department": "Drainage & Sewerage Division", "summary": "Missing manhole cover on busy road fatal fall hazard"},
-  {"text": "barsati nala choked hai halki barish me bhi pura bazaar doob jata hai", "category": "Drainage & Sewerage", "priority": "High", "department": "Drainage & Sewerage Division", "summary": "Choked storm nullah causing commercial area flash flooding"},
-  {"text": "guttar ka dhakkan toot gaya hai aur ganda paani ubal kar sadak par beh raha hai", "category": "Drainage & Sewerage", "priority": "Critical", "department": "Drainage & Sewerage Division", "summary": "Broken manhole slab with raw sewage spilling onto public street"},
-
-  {"text": "sadak par bohat baray khadday hain gaariyon ke rim toot rahe hain accident ho rahe hain", "category": "Roads & Infrastructure", "priority": "High", "department": "Metropolitan Development Authority (CDA / KDA / PWD)", "summary": "Deep road potholes damaging vehicles and causing traffic accidents"},
-  {"text": "University Road par pipe dalne ke baad khadda khula chhor diya gaya hai", "category": "Roads & Infrastructure", "priority": "High", "department": "Metropolitan Development Authority (CDA / KDA / PWD)", "summary": "Unfilled road trench hazard abandoned after pipeline excavation"},
-  {"text": "sadak toot phoot ka shikaar hai carpet road barish me beh gayi patch work chahiye", "category": "Roads & Infrastructure", "priority": "Medium", "department": "Metropolitan Development Authority (CDA / KDA / PWD)", "summary": "Deteriorated road surface requiring urgent asphalt patch repair"},
-  {"text": "flyover bridge ke expansion joint me bara crack agaya hai gaariyan lagti hain", "category": "Roads & Infrastructure", "priority": "Critical", "department": "Metropolitan Development Authority (CDA / KDA / PWD)", "summary": "Dangerous expansion joint gap on elevated flyover bridge"},
-
-  {"text": "awara kuttay logon aur school ke bachon ko kaat rahe hain rabies ka khatra hai", "category": "Public Safety & Parks", "priority": "Critical", "department": "Parks & Civic Amenities Directorate", "summary": "Aggressive stray dog pack biting pedestrians near school"},
-  {"text": "family park me jhoolay tootay huay hain aur boundary wall giri hui hai", "category": "Public Safety & Parks", "priority": "Low", "department": "Parks & Civic Amenities Directorate", "summary": "Damaged playground equipment and compromised park perimeter"},
-  {"text": "footpath par thelay walon aur dukandaron ne encroachment ki hui hai paidal chalna band", "category": "Public Safety & Parks", "priority": "Medium", "department": "Parks & Civic Amenities Directorate", "summary": "Illegal footpath encroachment forcing pedestrians onto main road"}
+  {
+    "text": "electricity nhi arahi hai subha 8 bajay se load shedding ka koi time table nahi hai",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Unscheduled power outage ongoing since 8 AM"
+  },
+  {
+    "text": "bijli chali gayi hai transformer se aag nikal rahi hai aur taar toot gayi hai",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Transformer on fire with snapped live wire"
+  },
+  {
+    "text": "voltage bohat low araha hai AC aur fridge jalne ka khatra hai 140 volts",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Severe low voltage fluctuation damaging household appliances"
+  },
+  {
+    "text": "K-Electric feeder tripped in Gulshan Block 7 entire street in total blackout",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Feeder trip causing complete blackout in Gulshan Block 7"
+  },
+  {
+    "text": "streetlight pole ki nangi taar sadak par jhool rahi hai current lag sakta hai",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Live exposed electric wire dangling near pedestrian pathway"
+  },
+  {
+    "text": "light nahi hai garmi me bachay beemar ho rahe hain 10 ghantay se bijli band hai",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Prolonged 10-hour electricity outage in high heat"
+  },
+  {
+    "text": "electric meter box sparking continuously outside residential apartment",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Electric meter sparking fire hazard at apartment gate"
+  },
+  {
+    "text": "street lights raat ko nahi jalti pura ilaqah andheray me dooba rehta hai",
+    "category": "Electricity & Power Outage",
+    "priority": "Medium",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Non-functional streetlights causing area blackout at night"
+  },
+  {
+    "text": "gas ki load shedding ho rahi hai subha se chulha nahi jal raha nashta nahi bana saktay",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "High",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Zero gas pressure preventing domestic cooking since morning"
+  },
+  {
+    "text": "gas ka pressure bilkul low hai roti nahi pak rahi Sui Gas supply band hai",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Extremely low gas pressure during peak meal hours"
+  },
+  {
+    "text": "gas pipeline leak ho rahi hai gali me shadeed badboo hai blast ka khatra hai",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Critical",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Major gas pipeline leak with severe explosion risk in street"
+  },
+  {
+    "text": "SSGC gas supply disconnect ho gayi hai bina kisi notice ke Model Town me",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Unannounced gas supply disconnection in Model Town"
+  },
+  {
+    "text": "gas meter leak kar raha hai chulha on kartay hi aag bharak uthti hai",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Critical",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Dangerous gas meter leak causing fire burst hazard"
+  },
+  {
+    "text": "SNGPL main line underground leakage hissing sound coming from road excavation",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Critical",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Underground gas pipeline rupture hissing near road trench"
+  },
+  {
+    "text": "gas nahi arahi pichle 3 din se hotel se khana mangwana par raha hai",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "Sui Gas Authority (SSGC / SNGPL)",
+    "summary": "Continuous 3-day gas outage in residential sector"
+  },
+  {
+    "text": "sweeper safai nhi kr raha pichle do hafton se gali me kachra phail gaya hai",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Sanitation worker absent for 2 weeks leading to street waste accumulation"
+  },
+  {
+    "text": "kachray ka dher laga hua hai main road par aur shadeed badbu aur makhiyan arahi hain",
+    "category": "Waste & Sanitation",
+    "priority": "High",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Massive garbage pile on main road causing stench and pest infestation"
+  },
+  {
+    "text": "kachra kundi overflow ho chuki hai janwar kachra sadak par bikher rahe hain",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Overflowing waste dumpster scattered by stray animals onto street"
+  },
+  {
+    "text": "dead animal carcass lying near market entrance health emergency stench",
+    "category": "Waste & Sanitation",
+    "priority": "Critical",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Decomposing animal carcass hazard outside vegetable market"
+  },
+  {
+    "text": "LWMC garbage collection dumper pichle 5 din se gali me nahi aya",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Missed municipal garbage truck collection schedule"
+  },
+  {
+    "text": "plastic aur kachra jalaya ja raha hai jiss se zehreela dhuaan phail raha hai",
+    "category": "Waste & Sanitation",
+    "priority": "Critical",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Toxic open plastic waste burning producing heavy black smoke"
+  },
+  {
+    "text": "sweeper safai ke paise mangta hai warna kachra nahi uthata",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "Solid Waste Management Board (SSWMB / LWMC)",
+    "summary": "Sanitation staff extortion and refusal of municipal waste duty"
+  },
+  {
+    "text": "paani nahi araha 5 din se WASA supply bilkul band hai tanker mangwana par raha hai",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "Water & Sanitation Agency (WASA / KWSB)",
+    "summary": "Complete 5-day municipal water supply cutoff"
+  },
+  {
+    "text": "main water pipeline burst ho gayi hai hazaron gallon saaf paani sadak par beh raha hai",
+    "category": "Water Supply & Leakage",
+    "priority": "Critical",
+    "department": "Water & Sanitation Agency (WASA / KWSB)",
+    "summary": "Major fresh water main line burst flooding road and wasting water"
+  },
+  {
+    "text": "ganda badboodar paani tap se araha hai sewerage ka paani drinking line me mix ho gaya",
+    "category": "Water Supply & Leakage",
+    "priority": "Critical",
+    "department": "Water & Sanitation Agency (WASA / KWSB)",
+    "summary": "Sewage mixing with drinking water line causing contamination health hazard"
+  },
+  {
+    "text": "water tanker mafia 10000 rupay mang raha hai sarkari supply zero hai KWSB issue",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "Water & Sanitation Agency (WASA / KWSB)",
+    "summary": "Water scarcity crisis and illegal tanker mafia overcharging"
+  },
+  {
+    "text": "paani ki underground pipe leak hone se road dhas gayi hai",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "Water & Sanitation Agency (WASA / KWSB)",
+    "summary": "Underground water pipe leakage causing road subsidence"
+  },
+  {
+    "text": "gutter ubal raha hai ganda sewerage ka paani gharon ke darwazay par jam gaya hai",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage & Sewerage Division",
+    "summary": "Overflowing sewer manhole inundating residential entrances"
+  },
+  {
+    "text": "sewer line block ho chuki hai toilet aur washroom se paani reverse mar raha hai",
+    "category": "Drainage & Sewerage",
+    "priority": "High",
+    "department": "Drainage & Sewerage Division",
+    "summary": "Blocked sewer main causing backflow into household toilets"
+  },
+  {
+    "text": "manhole ka dhakkan gayab hai khula gutter sadak par hai bacha gir sakta hai",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage & Sewerage Division",
+    "summary": "Missing manhole cover on busy road fatal fall hazard"
+  },
+  {
+    "text": "barsati nala choked hai halki barish me bhi pura bazaar doob jata hai",
+    "category": "Drainage & Sewerage",
+    "priority": "High",
+    "department": "Drainage & Sewerage Division",
+    "summary": "Choked storm nullah causing commercial area flash flooding"
+  },
+  {
+    "text": "guttar ka dhakkan toot gaya hai aur ganda paani ubal kar sadak par beh raha hai",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage & Sewerage Division",
+    "summary": "Broken manhole slab with raw sewage spilling onto public street"
+  },
+  {
+    "text": "sadak par bohat baray khadday hain gaariyon ke rim toot rahe hain accident ho rahe hain",
+    "category": "Roads & Infrastructure",
+    "priority": "High",
+    "department": "Metropolitan Development Authority (CDA / KDA / PWD)",
+    "summary": "Deep road potholes damaging vehicles and causing traffic accidents"
+  },
+  {
+    "text": "University Road par pipe dalne ke baad khadda khula chhor diya gaya hai",
+    "category": "Roads & Infrastructure",
+    "priority": "High",
+    "department": "Metropolitan Development Authority (CDA / KDA / PWD)",
+    "summary": "Unfilled road trench hazard abandoned after pipeline excavation"
+  },
+  {
+    "text": "sadak toot phoot ka shikaar hai carpet road barish me beh gayi patch work chahiye",
+    "category": "Roads & Infrastructure",
+    "priority": "Medium",
+    "department": "Metropolitan Development Authority (CDA / KDA / PWD)",
+    "summary": "Deteriorated road surface requiring urgent asphalt patch repair"
+  },
+  {
+    "text": "flyover bridge ke expansion joint me bara crack agaya hai gaariyan lagti hain",
+    "category": "Roads & Infrastructure",
+    "priority": "Critical",
+    "department": "Metropolitan Development Authority (CDA / KDA / PWD)",
+    "summary": "Dangerous expansion joint gap on elevated flyover bridge"
+  },
+  {
+    "text": "awara kuttay logon aur school ke bachon ko kaat rahe hain rabies ka khatra hai",
+    "category": "Public Safety & Parks",
+    "priority": "Critical",
+    "department": "Parks & Civic Amenities Directorate",
+    "summary": "Aggressive stray dog pack biting pedestrians near school"
+  },
+  {
+    "text": "family park me jhoolay tootay huay hain aur boundary wall giri hui hai",
+    "category": "Public Safety & Parks",
+    "priority": "Low",
+    "department": "Parks & Civic Amenities Directorate",
+    "summary": "Damaged playground equipment and compromised park perimeter"
+  },
+  {
+    "text": "footpath par thelay walon aur dukandaron ne encroachment ki hui hai paidal chalna band",
+    "category": "Public Safety & Parks",
+    "priority": "Medium",
+    "department": "Parks & Civic Amenities Directorate",
+    "summary": "Illegal footpath encroachment forcing pedestrians onto main road"
+  },
+  {
+    "text": "K-Electric ki tarafse humari gali me 3 din se light nahi hai, koi bata nahi raha kab tak theek hogi.",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "3-day unscheduled outage with no restoration timeline"
+  },
+  {
+    "text": "Streetlight pole near our house is completely dead for two weeks, whole street is pitch dark at night.",
+    "category": "Electricity & Power Outage",
+    "priority": "Medium",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Streetlight outage causing dark street at night"
+  },
+  {
+    "text": "Voltage fluctuation is damaging our appliances every evening around 7pm, this has been going on for a week.",
+    "category": "Electricity & Power Outage",
+    "priority": "Medium",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Recurring voltage fluctuation damaging appliances"
+  },
+  {
+    "text": "Bijli ka khambha jhuk gaya hai aur taarain neechay latak rahi hain, bachay us se guzarte hain school jatay waqt.",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Leaning pole with hanging live wires near school route"
+  },
+  {
+    "text": "Meter box is sparking every time it rains, neighbours are scared to walk past it.",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Meter box sparking during rain, safety hazard"
+  },
+  {
+    "text": "Ek hi bulb kharab hai gali ki light me, baqi sab theek hain, jab time mile tab dekh lein.",
+    "category": "Electricity & Power Outage",
+    "priority": "Low",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Single bulb out, low urgency"
+  },
+  {
+    "text": "Power tripped twice this week during the afternoon, seems minor but wanted to log it.",
+    "category": "Electricity & Power Outage",
+    "priority": "Low",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Minor intermittent tripping, low urgency"
+  },
+  {
+    "text": "Transformer ki awaz bohat tez aa rahi hai aur dhuaan bhi nikal raha hai, area khali karwana chahiye.",
+    "category": "Electricity & Power Outage",
+    "priority": "Critical",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Transformer emitting smoke and loud noise, evacuation risk"
+  },
+  {
+    "text": "Electricity bill meter seems to be running unusually fast, requesting an inspection when convenient.",
+    "category": "Electricity & Power Outage",
+    "priority": "Low",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Meter reading concern, non-urgent inspection request"
+  },
+  {
+    "text": "Underground cable ka dhakkan khula pada hai road pe, neeche se taarain dikh rahi hain.",
+    "category": "Electricity & Power Outage",
+    "priority": "High",
+    "department": "Power Distribution Company (K-Electric / LESCO / IESCO)",
+    "summary": "Open underground cable cover exposing live wires"
+  },
+  {
+    "text": "Sui gas ka pressure itna kam hai ke chulha jalta hi nahi subha ke waqt.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "SSGC / SNGPL",
+    "summary": "Low gas pressure preventing stove ignition in mornings"
+  },
+  {
+    "text": "There's a strong smell of gas near the main pipeline junction on our street, worried it might be a leak.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Critical",
+    "department": "SSGC / SNGPL",
+    "summary": "Possible gas leak near pipeline junction"
+  },
+  {
+    "text": "Gas load shedding schedule nahi mil raha, kabhi bhi band ho jati hai bina notice ke.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "SSGC / SNGPL",
+    "summary": "Unpredictable gas loadshedding without schedule"
+  },
+  {
+    "text": "Winter aa gayi hai aur gas ka pressure itna weak hai ke geyser bilkul kaam nahi karta.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Medium",
+    "department": "SSGC / SNGPL",
+    "summary": "Weak winter gas pressure affecting water heater"
+  },
+  {
+    "text": "Gas meter reading paper humein mila hi nahi is mahine, general query hai koi jaldi nahi.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Low",
+    "department": "SSGC / SNGPL",
+    "summary": "Missing gas meter reading slip, low urgency"
+  },
+  {
+    "text": "Hissing sound coming from the gas pipe outside our kitchen wall, getting stronger since yesterday.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Critical",
+    "department": "SSGC / SNGPL",
+    "summary": "Hissing gas pipe sound, possible active leak"
+  },
+  {
+    "text": "Gas supply bilkul band hai poore mohallay mein subha se, khana pakana mushkil ho gaya hai.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "High",
+    "department": "SSGC / SNGPL",
+    "summary": "Complete gas outage across neighbourhood since morning"
+  },
+  {
+    "text": "Requesting information on how to apply for a new domestic gas connection in our area.",
+    "category": "Gas Supply & Loadshedding",
+    "priority": "Low",
+    "department": "SSGC / SNGPL",
+    "summary": "New connection inquiry"
+  },
+  {
+    "text": "Kachra kaafi din se uthaya nahi gaya, gali mein badbu phail gayi hai aur makkhiyan bhi.",
+    "category": "Waste & Sanitation",
+    "priority": "High",
+    "department": "SSWMB / LWMC",
+    "summary": "Uncollected garbage causing odor and flies for days"
+  },
+  {
+    "text": "There's a small pile of leaves and packaging near the park entrance, could be swept up sometime.",
+    "category": "Waste & Sanitation",
+    "priority": "Low",
+    "department": "SSWMB / LWMC",
+    "summary": "Minor litter near park entrance"
+  },
+  {
+    "text": "Sweeper is not coming to our street for the past 10 days, garbage is piling up on the corner.",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "SSWMB / LWMC",
+    "summary": "Sweeper absence causing garbage buildup"
+  },
+  {
+    "text": "Kisi ne medical waste, syringes waghera, khule mein pichay wali gali mein phenk diye hain.",
+    "category": "Waste & Sanitation",
+    "priority": "Critical",
+    "department": "SSWMB / LWMC",
+    "summary": "Medical/hazardous waste dumped in open, health hazard"
+  },
+  {
+    "text": "Garbage dumpster near the market is overflowing badly and stray dogs are scattering it onto the road.",
+    "category": "Waste & Sanitation",
+    "priority": "High",
+    "department": "SSWMB / LWMC",
+    "summary": "Overflowing dumpster with waste spreading onto road"
+  },
+  {
+    "text": "Would like to request an additional dustbin be placed near the bus stop, current one fills up too fast.",
+    "category": "Waste & Sanitation",
+    "priority": "Low",
+    "department": "SSWMB / LWMC",
+    "summary": "Request for additional bin, low urgency"
+  },
+  {
+    "text": "Construction debris dala hua hai khali plot mein kaafi arsay se, ab keeray makoray paida ho rahe hain.",
+    "category": "Waste & Sanitation",
+    "priority": "Medium",
+    "department": "SSWMB / LWMC",
+    "summary": "Construction debris on vacant plot breeding pests"
+  },
+  {
+    "text": "Illegal dumping of factory waste spotted near the canal bank, water is turning discolored.",
+    "category": "Waste & Sanitation",
+    "priority": "Critical",
+    "department": "SSWMB / LWMC",
+    "summary": "Illegal factory waste dumping contaminating canal"
+  },
+  {
+    "text": "Pani ki line phat gayi hai road ke neeche, sara pani stret pe bah raha hai subha se.",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "WASA / KWSB",
+    "summary": "Burst water line flooding the street since morning"
+  },
+  {
+    "text": "Tap water has a strange yellow color and smell for the last two days, worried about drinking it.",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "WASA / KWSB",
+    "summary": "Discolored, foul-smelling tap water — possible contamination"
+  },
+  {
+    "text": "Humaray ilaqay mein 4 din se paani bilkul nahi aya, tanker mangwana pad raha hai.",
+    "category": "Water Supply & Leakage",
+    "priority": "High",
+    "department": "WASA / KWSB",
+    "summary": "4-day water supply outage forcing tanker reliance"
+  },
+  {
+    "text": "Small drip from the outdoor tap connection, not wasting much water but should be tightened eventually.",
+    "category": "Water Supply & Leakage",
+    "priority": "Low",
+    "department": "WASA / KWSB",
+    "summary": "Minor tap drip, low urgency"
+  },
+  {
+    "text": "Sewage aur peene ka pani aapas mein mix ho raha hai humaray ghar ke saamne, bohat khatarnaak hai.",
+    "category": "Water Supply & Leakage",
+    "priority": "Critical",
+    "department": "WASA / KWSB",
+    "summary": "Sewage mixing with drinking water — serious health hazard"
+  },
+  {
+    "text": "Water pressure has been noticeably low for the past few days, taking much longer to fill tanks.",
+    "category": "Water Supply & Leakage",
+    "priority": "Medium",
+    "department": "WASA / KWSB",
+    "summary": "Reduced water pressure over several days"
+  },
+  {
+    "text": "Main supply pipeline leak has completely flooded the basement of the building next to us.",
+    "category": "Water Supply & Leakage",
+    "priority": "Critical",
+    "department": "WASA / KWSB",
+    "summary": "Major pipeline leak flooding a building basement"
+  },
+  {
+    "text": "Requesting billing correction, water meter reading seems higher than actual usage this month.",
+    "category": "Water Supply & Leakage",
+    "priority": "Low",
+    "department": "WASA / KWSB",
+    "summary": "Billing/meter reading query, low urgency"
+  },
+  {
+    "text": "Nala choke ho gaya hai aur gandha pani gali mein khada ho gaya hai, machar bhi barh gaye hain.",
+    "category": "Drainage & Sewerage",
+    "priority": "Medium",
+    "department": "Drainage Division",
+    "summary": "Blocked drain with standing sewage water, rising mosquitoes"
+  },
+  {
+    "text": "Manhole cover is missing right in the middle of the walking path, someone could easily fall in.",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage Division",
+    "summary": "Missing manhole cover on walking path — fall hazard"
+  },
+  {
+    "text": "Halki si smell aa rahi hai gutter se, abhi zyada masla nahi lekin sochta jaldi dekh len.",
+    "category": "Drainage & Sewerage",
+    "priority": "Low",
+    "department": "Drainage Division",
+    "summary": "Mild drain odor, low urgency"
+  },
+  {
+    "text": "Heavy rain caused the drain to overflow into three houses on our street last night.",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage Division",
+    "summary": "Drain overflow flooding multiple houses after rain"
+  },
+  {
+    "text": "Sewerage line block hai kaafi hafton se, ghar ke andar bhi wapis aane laga hai pani.",
+    "category": "Drainage & Sewerage",
+    "priority": "High",
+    "department": "Drainage Division",
+    "summary": "Long-blocked sewer line, water backing up into homes"
+  },
+  {
+    "text": "Storm drain grate near the school is partially blocked with leaves, causing puddles after rain.",
+    "category": "Drainage & Sewerage",
+    "priority": "Medium",
+    "department": "Drainage Division",
+    "summary": "Partially blocked storm drain causing puddling"
+  },
+  {
+    "text": "Open nala without any barrier right next to the children's play area, very risky.",
+    "category": "Drainage & Sewerage",
+    "priority": "Critical",
+    "department": "Drainage Division",
+    "summary": "Unbarricaded open drain next to children's play area"
+  },
+  {
+    "text": "Bara sa gaddha bann gaya hai main road pe, motorcycle waalon ko bohat masla ho raha hai.",
+    "category": "Roads & Infrastructure",
+    "priority": "High",
+    "department": "CDA / KDA / PWD",
+    "summary": "Large pothole on main road causing issues for motorcyclists"
+  },
+  {
+    "text": "Speed breaker is completely worn down and barely visible at night, almost caused an accident.",
+    "category": "Roads & Infrastructure",
+    "priority": "High",
+    "department": "CDA / KDA / PWD",
+    "summary": "Worn, near-invisible speed breaker — accident risk at night"
+  },
+  {
+    "text": "Footpath ki tile ukhad gayi hai ek jagah se, chalte waqt thokar lag sakti hai.",
+    "category": "Roads & Infrastructure",
+    "priority": "Low",
+    "department": "CDA / KDA / PWD",
+    "summary": "Loose footpath tile, minor trip risk"
+  },
+  {
+    "text": "Road collapsed partially after last week's rain near the underpass, one lane is completely unusable.",
+    "category": "Roads & Infrastructure",
+    "priority": "Critical",
+    "department": "CDA / KDA / PWD",
+    "summary": "Partial road collapse near underpass blocking a lane"
+  },
+  {
+    "text": "Chhoti chhoti cracks aa rahi hain sadak pe, filhaal drivable hai bas future ke liye report kar raha hoon.",
+    "category": "Roads & Infrastructure",
+    "priority": "Low",
+    "department": "CDA / KDA / PWD",
+    "summary": "Minor road cracks, still drivable, low urgency"
+  },
+  {
+    "text": "Bridge railing on the pedestrian overpass is broken in two places, dangerous for people crossing.",
+    "category": "Roads & Infrastructure",
+    "priority": "Critical",
+    "department": "CDA / KDA / PWD",
+    "summary": "Broken pedestrian bridge railing — fall hazard"
+  },
+  {
+    "text": "Sadak ka ek hissa dhans gaya hai barish ki wajah se, gaddiyan usse bach ke nikal rahi hain.",
+    "category": "Roads & Infrastructure",
+    "priority": "High",
+    "department": "CDA / KDA / PWD",
+    "summary": "Road section caved in after rain, vehicles swerving to avoid"
+  },
+  {
+    "text": "Park ka swing set toota hua hai kaafi arsay se, bachay uspe kheltay hain phir bhi.",
+    "category": "Public Safety & Parks",
+    "priority": "Medium",
+    "department": "General Civic Redressal Cell",
+    "summary": "Broken park swing set still in use by children"
+  },
+  {
+    "text": "Construction site next to the park has been left completely unsecured overnight, no barriers at all.",
+    "category": "Public Safety & Parks",
+    "priority": "High",
+    "department": "General Civic Redressal Cell",
+    "summary": "Unsecured construction site near park overnight"
+  },
+  {
+    "text": "Stray dogs ka jhund bann gaya hai park ke paas, log shaam ko darte hain wahan se guzarte hue.",
+    "category": "Public Safety & Parks",
+    "priority": "Medium",
+    "department": "General Civic Redressal Cell",
+    "summary": "Stray dog pack near park causing resident concern"
+  },
+  {
+    "text": "Park bench is broken and has a sharp exposed edge, could injure someone sitting on it.",
+    "category": "Public Safety & Parks",
+    "priority": "Medium",
+    "department": "General Civic Redressal Cell",
+    "summary": "Broken bench with sharp edge — injury risk"
+  },
+  {
+    "text": "Park mein light bilkul nahi hai raat ko, security ka masla ban gaya hai walkers ke liye.",
+    "category": "Public Safety & Parks",
+    "priority": "Medium",
+    "department": "General Civic Redressal Cell",
+    "summary": "No park lighting at night — safety concern for walkers"
+  },
+  {
+    "text": "General suggestion: could the park add more waste bins near the jogging track for joggers?",
+    "category": "Public Safety & Parks",
+    "priority": "Low",
+    "department": "General Civic Redressal Cell",
+    "summary": "Suggestion for additional bins, low urgency"
+  },
+  {
+    "text": "Deep uncovered pit left near the park entrance from old construction work, extremely dangerous for kids.",
+    "category": "Public Safety & Parks",
+    "priority": "Critical",
+    "department": "General Civic Redressal Cell",
+    "summary": "Uncovered deep pit near park entrance — serious child hazard"
+  }
 ]

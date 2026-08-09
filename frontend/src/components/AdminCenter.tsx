@@ -85,13 +85,27 @@ export function AdminCenter({ complaints, onRefresh }: AdminCenterProps) {
 
   return (
     <div>
+      <style>{`
+        .ac-kpi   { display: grid; grid-template-columns: repeat(5,1fr); gap: 10px; margin-bottom: 20px; }
+        .ac-kanban { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; align-items: start; }
+        .ac-modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; font-size: 0.8rem; }
+        .ac-modal-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+        @media (max-width: 1100px) { .ac-kanban { grid-template-columns: repeat(2,1fr); } }
+        @media (max-width: 900px)  { .ac-kpi { grid-template-columns: repeat(3,1fr); } }
+        @media (max-width: 640px)  {
+          .ac-kpi    { grid-template-columns: repeat(2,1fr); }
+          .ac-kanban { grid-template-columns: 1fr; }
+          .ac-modal-grid  { grid-template-columns: 1fr; }
+          .ac-modal-fields { grid-template-columns: 1fr; }
+        }
+      `}</style>
       <div className="section-header">
         <h1>Command Center</h1>
         <p>Manage civic Complain lifecycles, reassign departments, and track service status across all municipal wards.</p>
       </div>
 
       {/* KPI strip */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 10, marginBottom: 20 }}>
+      <div className="ac-kpi">
         {[
           { label: "Total", value: total },
           { label: "Open", value: open },
@@ -174,7 +188,7 @@ export function AdminCenter({ complaints, onRefresh }: AdminCenterProps) {
         </div>
       ) : (
         /* Kanban */
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, alignItems: "start" }}>
+        <div className="ac-kanban">
           {STATUSES.map(col => {
             const cards = filtered.filter(c => c.status === col);
             return (
@@ -212,7 +226,7 @@ export function AdminCenter({ complaints, onRefresh }: AdminCenterProps) {
               </div>
               <button onClick={() => setDetail(null)} style={{ background: "none", border: "none", cursor: "pointer", color: "#AAAAAA", fontSize: "1.1rem" }}>✕</button>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 16, fontSize: "0.8rem" }}>
+            <div className="ac-modal-grid">
               <div>
                 <div style={{ color: "#AAAAAA", fontSize: "0.7rem", marginBottom: 3 }}>Citizen</div>
                 <div style={{ fontWeight: 600, color: "#111111" }}>{detail.citizen_name}</div>
@@ -232,7 +246,7 @@ export function AdminCenter({ complaints, onRefresh }: AdminCenterProps) {
               <div style={{ color: "#AAAAAA", fontSize: "0.7rem", marginBottom: 5 }}>AI Dispatch Briefing</div>
               <div style={{ fontSize: "0.8rem", color: "#444444", background: "#F8F8F8", borderRadius: 7, padding: "10px 12px", border: "1px solid #EEEEEE", lineHeight: 1.6 }}>{detail.ai_summary}</div>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 20 }}>
+            <div className="ac-modal-fields">
               <div>
                 <div style={{ color: "#AAAAAA", fontSize: "0.7rem", marginBottom: 5 }}>Status Transition</div>
                 <select value={detail.status} onChange={e => updateStatus(detail.id, e.target.value)} className="field">

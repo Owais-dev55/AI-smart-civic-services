@@ -36,6 +36,11 @@ export function StatisticsSuite() {
 
   return (
     <div>
+      <style>{`
+        .ss-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+        @media (max-width: 1100px) { .ss-grid { grid-template-columns: 1fr 1fr; } .ss-span2 { grid-column: span 2; } .ss-spanfull { grid-column: 1 / -1; } }
+        @media (max-width: 640px)  { .ss-grid { grid-template-columns: 1fr; } .ss-span2 { grid-column: span 1; } .ss-spanfull { grid-column: span 1; } }
+      `}</style>
       <div className="section-header">
         <h1>Statistical Analytics</h1>
         <p>Descriptive statistics, quartile fences, frequency distributions, and natural language policy insights from the municipal database.</p>
@@ -60,7 +65,7 @@ export function StatisticsSuite() {
         </div>
       )}
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
+      <div className="ss-grid">
 
         {/* Central Tendency */}
         <div className="surface" style={{ padding: 20 }}>
@@ -88,7 +93,7 @@ export function StatisticsSuite() {
         </div>
 
         {/* Category Distribution */}
-        <div className="surface" style={{ padding: 20, gridColumn: "span 2" }}>
+        <div className="surface ss-span2" style={{ padding: 20 }}>
           <div style={{ fontSize: "0.6875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".08em", color: "#BBBBBB", marginBottom: 16 }}>Category Frequency Distribution</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {(stats.category_distribution || []).map((c, i) => (
@@ -125,7 +130,7 @@ export function StatisticsSuite() {
         </div>
 
         {/* Ward Hotspots */}
-        <div className="surface" style={{ padding: 20, gridColumn: "span 2" }}>
+        <div className="surface ss-span2" style={{ padding: 20 }}>
           <div style={{ fontSize: "0.6875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".08em", color: "#BBBBBB", marginBottom: 14 }}>Ward Incident Hotspots</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
             {(stats.ward_distribution || []).map((w, i) => (
@@ -154,7 +159,7 @@ export function StatisticsSuite() {
         </div>
 
         {/* NL Briefing */}
-        <div className="surface" style={{ padding: 22, gridColumn: "1 / -1" }}>
+        <div className="surface ss-spanfull" style={{ padding: 22 }}>
           <div style={{ fontSize: "0.6875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".08em", color: "#BBBBBB", marginBottom: 18 }}>AI Statistical Briefing for City Leadership</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {[

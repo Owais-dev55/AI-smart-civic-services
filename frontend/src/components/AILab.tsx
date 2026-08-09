@@ -43,12 +43,19 @@ export function AILab() {
 
   return (
     <div>
+      <style>{`
+        .al-top    { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+        .al-result { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .al-ethics { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; font-size: 0.75rem; color: #555; line-height: 1.5; }
+        @media (max-width: 900px) { .al-top { grid-template-columns: 1fr; } .al-result { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) { .al-ethics { grid-template-columns: 1fr; } }
+      `}</style>
       <div className="section-header">
         <h1>AI Explainability & Computer Vision Lab</h1>
         <p>Inspect the multimodal pipeline: TF-IDF NLP classification for Roman Urdu/English alongside Gemini Computer Vision damage defect analysis.</p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+      <div className="al-top">
 
         {/* Sandbox */}
         <div className="surface" style={{ padding: 22 }}>
@@ -158,7 +165,7 @@ export function AILab() {
           <div style={{ fontSize: "0.6875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".08em", color: "#BBBBBB", marginBottom: 16 }}>
             Multimodal AI Inspection Results
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+          <div className="al-result">
 
             {/* Left: Probabilities */}
             <div>
@@ -233,7 +240,7 @@ export function AILab() {
         <div style={{ fontSize: "0.6875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".08em", color: "#BBBBBB", marginBottom: 10 }}>
           Ethical AI & Edge Case Governance
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14, fontSize: "0.75rem", color: "#555555", lineHeight: 1.5 }}>
+        <div className="al-ethics">
           <div>
             <strong style={{ color: "#111111", display: "block", marginBottom: 3 }}>Bilingual Dialect Parity</strong>
             Trained on authentic Pakistani civic terminology (Roman Urdu + English) to eliminate municipal exclusion.

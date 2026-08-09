@@ -7,6 +7,9 @@ interface SidebarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
   onReset: () => void;
+  onGoHome: () => void;
+  open?: boolean;
+  onClose?: () => void;
 }
 
 const NAV = [
@@ -16,7 +19,7 @@ const NAV = [
   { id: "ailab",      label: "AI Explainability Lab"  },
 ];
 
-export function Sidebar({ activeTab, setActiveTab, onReset }: SidebarProps) {
+export function Sidebar({ activeTab, setActiveTab, onReset, onGoHome, open, onClose }: SidebarProps) {
   const [health, setHealth] = useState<{ total_complaints_stored?: number }>({});
   const [resetting, setResetting] = useState(false);
 
@@ -31,16 +34,32 @@ export function Sidebar({ activeTab, setActiveTab, onReset }: SidebarProps) {
   };
 
   return (
-    <aside style={{ width: "var(--sidebar-w)", minHeight: "100vh", position: "fixed", top: 0, left: 0, display: "flex", flexDirection: "column", background: "#111111", zIndex: 40 }}>
+    <aside className={`sidebar${open ? " sidebar--open" : ""}`} style={{ width: "var(--sidebar-w)", minHeight: "100vh", position: "fixed", top: 0, left: 0, display: "flex", flexDirection: "column", background: "#111111" }}>
 
-      {/* Brand */}
-      <div style={{ padding: "24px 20px 20px", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-        <div style={{ fontSize: "0.9375rem", fontWeight: 800, color: "#FFFFFF", letterSpacing: "-.02em", marginBottom: 3 }}>
-          AwaamCare AI
-        </div>
-        <div style={{ fontSize: "0.5875rem", color: "#666666", letterSpacing: ".1em", textTransform: "uppercase", fontWeight: 600 }}>
-          Municipal Intelligence Platform
-        </div>
+      {/* Brand — click to go back to landing */}
+      <div style={{ padding: "18px 20px 14px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <button
+          onClick={onGoHome}
+          style={{ background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", flex: 1 }}
+          title="Back to Home"
+        >
+          <div style={{ fontSize: "0.9375rem", fontWeight: 800, color: "#FFFFFF", letterSpacing: "-.02em", marginBottom: 3 }}>
+            AwaamCare AI
+          </div>
+          <div style={{ fontSize: "0.5875rem", color: "#555555", letterSpacing: ".1em", textTransform: "uppercase", fontWeight: 600 }}>
+            Municipal Intelligence Platform
+          </div>
+        </button>
+        {/* Close button — mobile only */}
+        {onClose && (
+          <button
+            onClick={onClose}
+            aria-label="Close menu"
+            style={{ background: "none", border: "none", color: "#555555", fontSize: "1.1rem", cursor: "pointer", padding: "4px", lineHeight: 1, flexShrink: 0 }}
+          >
+            ✕
+          </button>
+        )}
       </div>
 
       {/* Nav */}

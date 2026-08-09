@@ -15,6 +15,7 @@ from abc import ABC, abstractmethod
 try:
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.naive_bayes import MultinomialNB
+    from sklearn.linear_model import LogisticRegression
     from sklearn.pipeline import Pipeline
     from sklearn.metrics.pairwise import cosine_similarity
     SKLEARN_AVAILABLE = True
@@ -80,7 +81,7 @@ class TextClassificationService(BaseAIAnalyzer):
         if SKLEARN_AVAILABLE:
             try:
                 self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=1, stop_words="english")
-                self.classifier = MultinomialNB(alpha=0.1)
+                self.classifier = LogisticRegression(max_iter=2000, class_weight="balanced", C=5)
                 self.pipeline = Pipeline([
                     ("tfidf", self.vectorizer),
                     ("clf", self.classifier)
