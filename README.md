@@ -16,7 +16,8 @@ The platform turns **unstructured citizen complaints** into structured, prioriti
 
 | Hackathon Benchmark | Implementation Highlights | Rubric Focus |
 | :--- | :--- | :--- |
-| **Benchmark 1: Advance AI & Data Science** | • Multi-class NLP classifier for complaint category & department routing.<br>• Priority Urgency Scorer (`Low`, `Medium`, `High`, `Critical`).<br>• Executive Operational Summarizer for field crews.<br>• Semantic Duplicate Complaint Detector (TF-IDF Cosine similarity).<br>• Computer Vision Hazard Inspector & Interactive Civic AI Assistant (RAG).<br>• Full explainability, token weights, and documented limitations. | **25 Marks** |
+| **Benchmark 1: Advance AI & Data Science** | • Multi-class NLP classifier for complaint category & department routing.<br>• Priority Urgency Scorer (`Low`, `Medium`, `High`, `Critical`).<br>• Executive Operational Summarizer for field crews.<br>• Semantic Duplicate Complaint Detector (TF-IDF Cosine similarity).<br>• Computer Vision Hazard Inspector & Interactive Civic AI Assistant (Gemini LLM + rule-based fallback).
+<br>• Full explainability, token weights, and documented limitations. | **25 Marks** |
 | **Benchmark 2: Batch 4 — Statistics** | • **Measures of Central Tendency:** Arithmetic Mean, Median (50th percentile), Mode.<br>• **Measures of Dispersion:** Sample Variance ($s^2$), Standard Deviation ($\sigma$), Range ($\text{Max} - \text{Min}$).<br>• **Quartiles & Tukey Outlier Fences:** $Q_1$, $Q_2$, $Q_3$, $IQR = Q_3 - Q_1$, Lower Fence ($Q_1 - 1.5 \times IQR$), Upper Fence ($Q_3 + 1.5 \times IQR$).<br>• **Frequency Distributions** for categories, priorities, wards, and statuses.<br>• **Natural Language Insights:** Explains the real-world civic meaning behind the numbers. | **15 Marks** |
 | **Benchmark 3: Batch 5 — OOP Architecture** | • Strong modular object-oriented architecture.<br>• Domain entity classes: `Complaint`, `Citizen`, `Department`, `AIAnalysisResult`.<br>• AI Service class hierarchy inheriting from `BaseAIAnalyzer`.<br>• Clean encapsulation in `ComplaintManager`, `DatabaseManager`, `NotificationManager`, and `StatisticalEngine`. | **10 Marks** |
 
@@ -79,7 +80,7 @@ graph TD
         AIS --> SUMM[ActionableSummarizerService - Operational Extraction]
         AIS --> DUP[DuplicateDetectionService - Cosine Similarity]
         AIS --> VIS[VisionInspectionService - Hazard Tags]
-        AIS --> CHAT[CivicAssistantService - RAG Helpdesk]
+        AIS --> CHAT[CivicAssistantService - Gemini LLM + Rule-based Fallback]
     end
     
     subgraph "Storage & Intelligence"
@@ -143,7 +144,7 @@ d:/hackathon/
 │   │   │   ├── entities.py      # OOP Entity classes (Complaint, Citizen, Department)
 │   │   │   └── schemas.py       # Pydantic request/response schemas
 │   │   ├── services/
-│   │   │   ├── ai_service.py    # BaseAIAnalyzer & sub-analyzers (NLP, Priority, Vision, RAG)
+│   │   │   ├── ai_service.py    # BaseAIAnalyzer & sub-analyzers (NLP, Priority, Vision, Assistant)
 │   │   │   ├── statistics_service.py # StatisticalEngine (Mean, Median, StdDev, IQR, Fences)
 │   │   │   ├── database_manager.py   # SQLite persistence & auto-seeding
 │   │   │   ├── complaint_manager.py  # Business logic & orchestrator
