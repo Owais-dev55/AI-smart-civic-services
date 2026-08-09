@@ -14,7 +14,6 @@ from abc import ABC, abstractmethod
 # Scikit-learn & scientific imports
 try:
     from sklearn.feature_extraction.text import TfidfVectorizer
-    from sklearn.naive_bayes import MultinomialNB
     from sklearn.linear_model import LogisticRegression
     from sklearn.pipeline import Pipeline
     from sklearn.metrics.pairwise import cosine_similarity
@@ -370,7 +369,7 @@ class VisionInspectionService(BaseAIAnalyzer):
 
 class CivicAssistantService:
     """
-    Conversational RAG assistant integrating Google Gemini LLM API with
+    Conversational context-grounded LLM assistant integrating Google Gemini API with
     grounded knowledge of Pakistani municipal civic laws, SLAs, and database state.
     Provides short, crisp 1-2 sentence municipal customer support responses.
     """
@@ -424,7 +423,7 @@ class CivicAssistantService:
                 "powered_by": "Gemini AI"
             }
 
-        # 2. Contextual Fallback RAG Engine (Short, crisp 1-2 sentence replies)
+        # 2. Rule-based keyword-matched fallback (Short, crisp 1-2 sentence replies)
         is_urdu = self._is_roman_urdu(message)
         kb = self.KNOWLEDGE_BASE_URDU if is_urdu else self.KNOWLEDGE_BASE_EN
         msg = message.lower()
