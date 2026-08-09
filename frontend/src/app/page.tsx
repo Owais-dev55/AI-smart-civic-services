@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { LandingPage } from "@/components/LandingPage";
 import { Sidebar } from "@/components/Sidebar";
 import { CitizenPortal } from "@/components/CitizenPortal";
 import { AdminCenter } from "@/components/AdminCenter";
@@ -9,16 +10,34 @@ import { AILab } from "@/components/AILab";
 import { CivicAssistant } from "@/components/CivicAssistant";
 import { CivicAPI, Complaint } from "@/lib/api";
 
+const SESSION_KEY = "awaamcare_entered";
+
 export default function Home() {
-  const [tab, setTab]             = useState("citizen");
-  const [complaints, setComplaints] = useState<Complaint[]>([]);
-  const [toast, setToast]         = useState<string | null>(null);
+  const [showLanding, setShowLanding] = useState(true);
+  const [tab, setTab]                 = useState("citizen");
+  const [complaints, setComplaints]   = useState<Complaint[]>([]);
+  const [toast, setToast]             = useState<string | null>(null);
+
+  /* Persist "entered" state for the session */
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const entered = sessionStorage.getItem(SESSION_KEY);
+      if (entered === "true") setShowLanding(false);
+    }
+  }, []);
+
+  const handleEnter = () => {
+    if (typeof window !== "undefined") sessionStorage.setItem(SESSION_KEY, "true");
+    setShowLanding(false);
+  };
 
   const loadComplaints = async () => {
     try { setComplaints(await CivicAPI.getComplaints()); } catch { }
   };
 
-  useEffect(() => { loadComplaints(); }, []);
+  useEffect(() => {
+    if (!showLanding) loadComplaints();
+  }, [showLanding]);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -30,6 +49,10 @@ export default function Home() {
     showToast(res.message);
     await loadComplaints();
   };
+
+  if (showLanding) {
+    return <LandingPage onEnter={handleEnter} />;
+  }
 
   return (
     <div className="layout">
